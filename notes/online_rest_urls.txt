@@ -1,0 +1,93 @@
+http://www.itfrontdesk.com/onlineresv/
+http://www.itfrontdesk.com/ReservationAdmin/reservation-overview.html
+
+
+Online resvation desk:
+--------------------------
+-- online
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getClientInfo?clientCode=DEMORESV&device=online&param1=127.0.0.1&param2=browser
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getLoginInfo?clientCode=DEMORESV&device=online&langCode=us-en&token=beb34b2c-51e5-39bf-b024-4f614e57b71c&transId=149
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/authenticateCustomer?clientCode=DEMORESV&device=online&langCode=us-en&token=973e1eb4-8260-3eab-bc00-a89c98b2a8cf&transId=149&loginParams=234234|0001231234|balajinsr@gmail.com
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getResvDetailsSelectionInfo?clientCode=DEMORESV&device=online&langCode=us-en&token=beb34b2c-51e5-39bf-b024-4f614e57b71c&transId=149
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getCompanyList?clientCode=DEMORESV&device=online&langCode=us-en&token=beb34b2c-51e5-39bf-b024-4f614e57b71c&transId=149
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getProcedureList?clientCode=DEMORESV&device=online&langCode=us-en&token=beb34b2c-51e5-39bf-b024-4f614e57b71c&transId=149&companyId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getLocationList?clientCode=DEMORESV&device=online&langCode=us-en&token=beb34b2c-51e5-39bf-b024-4f614e57b71c&transId=73&procedureId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getDepartmentList?clientCode=DEMORESV&device=online&langCode=us-en&token=beb34b2c-51e5-39bf-b024-4f614e57b71c&transId=73&locationId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getEventList?clientCode=DEMORESV&device=online&langCode=us-en&token=beb34b2c-51e5-39bf-b024-4f614e57b71c&transId=73&departmentId=1
+
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getEventDates?clientCode=DEMORESV&device=online&langCode=us-en&token=973e1eb4-8260-3eab-bc00-a89c98b2a8cf&transId=73&eventId=2&locationId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getEventTimes?clientCode=DEMORESV&device=online&langCode=us-en&token=beb34b2c-51e5-39bf-b024-4f614e57b71c&transId=73&eventId=2&locationId=1&date=05/30/2015
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getEventSeats?clientCode=DEMORESV&device=online&langCode=us-en&token=beb34b2c-51e5-39bf-b024-4f614e57b71c&transId=73&eventId=1&eventDateTimeId=3
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/holdReservation?clientCode=DEMORESV&device=online&langCode=us-en&token=beb34b2c-51e5-39bf-b024-4f614e57b71c&transId=73&companyId=1&procedureId=1&locationId=1&departmentId=1&eventId=2&seatId=1&eventDateTimeId=1&customerId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/confirmReservation?clientCode=DEMORESV&device=online&langCode=us-en&token=beb34b2c-51e5-39bf-b024-4f614e57b71c&transId=73&scheduleId=15&eventDateTimeId=2&customerId=4&comment=test
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/cancelReservation?clientCode=DEMORESV&device=online&langCode=us-en&token=beb34b2c-51e5-39bf-b024-4f614e57b71c&transId=73&scheduleId=12&customerId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/releaseHoldEventTime?clientCode=DEMORESV&device=online&langCode=us-en&token=beb34b2c-51e5-39bf-b024-4f614e57b71c&transId=73&scheduleId=11
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getEventHistory?clientCode=DEMORESV&device=online&langCode=us-en&token=beb34b2c-51e5-39bf-b024-4f614e57b71c&transId=73
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getReservedEvents?clientCode=DEMORESV&device=online&langCode=us-en&token=8cb58b7c-e1a9-3064-9d1d-05182978b022&transId=73&customerId=2
+
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/listOfThingsToBring?clientCode=DEMORESV&device=online&langCode=us-en&token=84639d36-31e6-350f-a582-5d6145707b2b&transId=72&eventId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getConfPageContactDetails?clientCode=DEMORESV&device=online&langCode=us-en&token=70125a92-da53-35e8-b11e-7ca5fc8d8deb&transId=70&locationId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getLoginInfoRightSideContent?clientCode=DEMORESV&device=online&langCode=us-en&token=84639d36-31e6-350f-a582-5d6145707b2b&transId=72
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getResvDetailsRightSideContent?clientCode=DEMORESV&device=online&langCode=us-en&token=84639d36-31e6-350f-a582-5d6145707b2b&transId=72
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getResvVerifyDetailsRightSideContent?clientCode=DEMORESV&device=online&langCode=us-en&token=84639d36-31e6-350f-a582-5d6145707b2b&transId=72
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getResvConfirmationPageRightSideContent?clientCode=DEMORESV&device=online&langCode=us-en&token=84639d36-31e6-350f-a582-5d6145707b2b&transId=72
+
+-- ivr 
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getClientInfo?clientCode=DEMORESV&device=ivr&param1=DSFI3245SDKFSFDUSFDLKD&param2=DTEDDTTESD
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getLoginInfo?clientCode=DEMORESV&device=ivr&langCode=us-en&token=R5af1a048-d0f8-3837-8c84-a2c027ded447&transId=96
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/authenticateCustomer?clientCode=DEMORESV&device=ivr&langCode=us-en&token=5af1a048-d0f8-3837-8c84-a2c027ded447&transId=96&loginParams=123123123123
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getResvDetailsSelectionInfo?clientCode=DEMORESV&device=ivr&langCode=us-en&token=5af1a048-d0f8-3837-8c84-a2c027ded447&transId=96
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getCompanyList?clientCode=DEMORESV&device=ivr&langCode=us-en&token=5af1a048-d0f8-3837-8c84-a2c027ded447&transId=96
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getProcedureList?clientCode=DEMORESV&device=ivr&langCode=us-en&token=5af1a048-d0f8-3837-8c84-a2c027ded447&transId=96&companyId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getLocationList?clientCode=DEMORESV&device=ivr&langCode=us-en&token=5af1a048-d0f8-3837-8c84-a2c027ded447&transId=96&procedureId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getDepartmentList?clientCode=DEMORESV&device=ivr&langCode=us-en&token=5af1a048-d0f8-3837-8c84-a2c027ded447&transId=96&locationId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getEventList?clientCode=DEMORESV&device=ivr&langCode=us-en&token=6684e013-03fc-3786-b8ee-a2639b311204&transId=131&departmentId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getEventDates?clientCode=DEMORESV&device=ivr&langCode=us-en&token=5af1a048-d0f8-3837-8c84-a2c027ded447&transId=96&eventId=2&locationId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getEventTimes?clientCode=DEMORESV&device=ivr&langCode=us-en&token=5af1a048-d0f8-3837-8c84-a2c027ded447&transId=96&eventId=1&locationId=2&date=06/20/2015
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getEventSeats?clientCode=DEMORESV&device=ivr&langCode=us-en&token=aea178a3-db93-39bb-bab9-6966d6ec44a2&transId=98&eventId=2&eventDateTimeId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/holdReservation?clientCode=DEMORESV&device=ivr&langCode=us-en&token=74d74312-e408-37f2-ac11-ed1b145e3b7d&transId=827&companyId=1&procedureId=1&locationId=1&departmentId=1&eventId=2&seatId=1&eventDateTimeId=1&customerId=4
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/confirmReservation?clientCode=DEMORESV&device=ivr&langCode=us-en&token=74d74312-e408-37f2-ac11-ed1b145e3b7d&transId=827&&scheduleId=2738&eventDateTimeId=1&customerId=4&comment=test
+
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/cancelReservation?clientCode=DEMORESV&device=ivr&langCode=us-en&token=123&transId=1&scheduleId=11&customer_id=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/releaseHoldEventTime?clientCode=DEMORESV&device=ivr&langCode=us-en&token=123&transId=1&scheduleId=11
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getEventHistory?clientCode=DEMORESV&device=ivr&langCode=us-en&token=123&transId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getNameRecordVxml?clientCode=DEMORESV&device=ivr&langCode=us-en&token=123&transId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/updateRecordVxml?clientCode=DEMORESV&device=ivr&langCode=us-en&token=123&transId=1&scheduleId=1&customerId=1&filePath=&fileName=&recordDurationInSec=3
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/listOfThingsToBring?clientCode=DEMORESV&device=ivr&langCode=us-en&token=123&transId=1&eventId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getSpecificDateVXML?clientCode=DEMORESV&device=ivr&langCode=us-en&token=367d96bf-eb10-3e87-820a-22210be4c579&transId=311
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/disconnectVXML?clientCode=DEMORESV&device=ivr&langCode=us-en&token=367d96bf-eb10-3e87-820a-22210be4c579&transId=311
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getReservedEvents?clientCode=DEMORESV&device=ivr&langCode=us-en&token=8cb58b7c-e1a9-3064-9d1d-05182978b022&transId=73&customerId=2
+
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/noApptInAllLocation?clientCode=DEMORESV&device=ivr&langCode=us-en&token=367d96bf-eb10-3e87-820a-22210be4c579&transId=311
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/noApptInSelectedLocation?clientCode=DEMORESV&device=ivr&langCode=us-en&token=367d96bf-eb10-3e87-820a-22210be4c579&transId=311&locationId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/noApptInSelectedEvent?clientCode=DEMORESV&device=ivr&langCode=us-en&token=367d96bf-eb10-3e87-820a-22210be4c579&transId=311&locationId=1&eventId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/noApptInSelectedDate?clientCode=DEMORESV&device=ivr&langCode=us-en&token=367d96bf-eb10-3e87-820a-22210be4c579&transId=311&locationId=1&eventId=1&date=12/18/2015
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/noApptInSelectedTime?clientCode=DEMORESV&device=ivr&langCode=us-en&token=367d96bf-eb10-3e87-820a-22210be4c579&transId=311&locationId=1&eventId=1&date=12/17/2015&eventDateTimeId=1
+http://development.itfrontdesk.com:8080/resvdeskRESTws/service/getCancelVerify?clientCode=DEMORESV&device=ivr&langCode=us-en&token=367d96bf-eb10-3e87-820a-22210be4c579&transId=311
+
+
+http://localhost:8089/resvdeskRESTws/service/isAllowDuplicateResv?clientCode=DEMORESV&device=online&langCode=us-en&token=70125a92-da53-35e8-b11e-7ca5fc8d8deb&transId=70&customerId=1&eventId=1
+
+
+// save
+http://localhost:8089/resvdeskRESTws/service/saveOrUpdateIVRCallLog
+{"clientCode":"DEMORESV",
+ "langCode":"us-en",
+ "device":"ivr",
+ "transId":"1"
+}
+
+{"clientCode":"DEMORESV",
+ "langCode":"us-en",
+ "device":"ivr",
+ "transId":"1",
+ "locationId":4,
+ "customerId":1,
+ "eventId":3,
+ "ivrCallId":3
+}
+
+
+
+
+

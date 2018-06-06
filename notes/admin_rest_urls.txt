@@ -1,0 +1,163 @@
+new urls:
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/addLocation
+{"clientCode":"DEMORESV",
+"langCode":"us-en",
+"device":"admin",
+"transId":"1",
+ "locationName": "Test Morgan County",
+ "address": "1909 Central Parkway SW,",
+ "city": "Decatur",
+ "state": "AL",
+ "zip": "",
+ "workPhone": "2560604050"}
+ 
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getLocationList?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getLocationListDropDown?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/deleteLocation?clientCode=DEMORESV&langCode=us-en&device=admin&langCode=us-en&transId=1&locationId=1
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/updateLocation
+{"clientCode":"DEMORESV",
+"langCode":"us-en",
+"device":"admin",
+"transId":"1",
+ "locationId":3,
+ "locationName": "Test Morgan County1",
+ "address": "1909 Central Parkway SW1,",
+ "city": "Decatur2",
+ "state": "AL",
+ "zip": "",
+ "workPhone": "256-060-4050"
+}
+
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/openCloseLocation?clientCode=DEMORESV&langCode=us-en&device=admin&langCode=us-en&transId=1&locationId=1&openClosedFlag=N
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/addEvent
+{"clientCode":"DEMORESV","langCode":"us-en","device":"admin","transId":"1","eventName":"Test Event","eventNameIvrTts":"300","eventNameIvrAudio":"demo.ivr","duration":60}
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getEventList?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getEventListByLocationId?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1&locationId=1
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/deleteEvent?clientCode=DEMORESV&langCode=us-en&device=admin&langCode=us-en&transId=1&eventId=1
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/openCloseEvent?clientCode=DEMORESV&langCode=us-en&device=admin&langCode=us-en&transId=1&eventId=1&openClosedFlag=N
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/updateEvent
+{"clientCode":"DEMORESV","langCode":"us-en","device":"admin","transId":"1","eventId":1,"eventName":"Test Event1","eventNameIvrTts":"Holistic Synergy - Text","eventNameIvrAudio":"demo.ivr","duration":60}
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getEventDateTimeList?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/openCloseEventDateTime?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1&eventDateTimeId=1&openClosedFlag=N
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/addEventDateTime
+{"clientCode":"DEMORESV","langCode":"us-en","device":"admin","transId":"1","eventId":1,"locationId":1,"date":"06/22/2015","time":"09:00 AM","noOfSeats":"20"}
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/validateEventDateTime
+{"clientCode":"DEMORESV","langCode":"us-en","device":"admin","transId":"1","eventId":1,"locationId":1,"date":"06/22/2015","time":"09:00 AM","noOfSeats":"20"}
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/updateEventDateTime
+{"clientCode":"DEMORESV","langCode":"us-en","device":"admin","transId":"1","eventDateTimeId":1,"eventId":1,"locationId":1,"date":"06/22/2015","time":"09:00 AM","noOfSeats":"20"}
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/updateEventSeats
+{"clientCode":"DEMORESV","langCode":"us-en","device":"admin","transId":"1","eventId":1,"locationId":1,"date":"06/22/2015","time":"09:00 AM","noOfSeats":"18","eventDateTimeId":1}
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getCalendarOverview?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1&startDate=&endDate=
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getSeatsCalendarView?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1&locationId=1&eventId=1&date=06/22/2015&time=09:00 AM
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getSeatViewTimeList?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1&locationId=1&eventId=1&date=06/22/2015
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getDailyCalendarView?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1&locationId=1&eventId=1&date=06/22/2015
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getDailyCalendarDateList?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1&locationId=1&eventId=1
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getHomePageDetails?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1&privilegeName=Super User
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getEventDateTimeById?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1&eventDateTimeId=1
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getCustomerNames?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1&customerName=Bal
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getReservationReports?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1&locationId=1&eventId=1&startDate=06/22/2015&endDate=08/01/2015
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getCalendarOverViewDetails?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1&eventDateTimeId=1
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getCustomerById?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1&token=&customerId=1
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getFutureReservations?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1&token=&customerId=1
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getPastReservations?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1&&token=&customerId=1
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getReservationByScheduleId?clientCode=DEMORESV&langCode=us-en&device=admin&transId=1&token=&scheduleId=23
+-- http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getRegistrationInfo?clientCode=DEMORESV&device=admin&langCode=us-en&token=beb34b2c-51e5-39bf-b024-4f614e57b71c&transId=149
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getReservationSearch
+{"clientCode":"DEMORESV",
+"langCode":"us-en",
+"device":"admin",
+"transId":1,
+ "firstName":"Bal",
+ "lastName":"Nandarapu"
+}
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getTablePrintView?clientCode=DEMORESV&langCode=us-en&device=admin&transId=2&token=&locationId=1&eventId=2&date=09/18/2015
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getDynamicSearchFields?clientCode=DEMORESV&langCode=us-en&device=admin&transId=2&token=&searchCategory=resv_search_fields
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getClientDetails
+{	"clientCode":"DEMORESV",
+	"langCode":"us-en",
+	"device":"admin",
+	"transId":1,
+ 	"firstName":"Bal",
+ 	"lastName":"Nandarapu"
+}
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getBlockedClientDetails
+{	"clientCode":"DEMORESV",
+	"langCode":"us-en",
+	"device":"admin",
+	"transId":1,
+ 	"firstName":"Bal",
+ 	"lastName":"Nandarapu"
+}
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getGraphDetails?clientCode=DEMORESV&langCode=us-en&device=admin&transId=2&token=&locationId=1&date=09/18/2015
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/updateCustomer
+{	"clientCode":"DEMORESV",
+	"langCode":"us-en",
+	"device":"admin",
+	"transId":1,
+ 	"accountNumber":"873639574",
+ 	"customerId":43
+ 	
+}
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getAccessesPrivilages?clientCode=DEMORESV&langCode=us-en&device=admin&transId=2&token=
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getLocationById?clientCode=DEMORESV&langCode=us-en&device=admin&transId=2&token=&locationId=1
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getEventById?clientCode=DEMORESV&langCode=us-en&device=admin&transId=2&token=&eventId=1
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getReservationReminders?clientCode=DEMORESV&langCode=us-en&device=admin&transId=2&token=&locationId=1&campaignId=1&date=10/22/2015
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getReservationReportConfig?clientCode=DEMORESV&langCode=us-en&device=admin&transId=2&token=
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getCampaigns?clientCode=DEMORESV&langCode=us-en&device=admin&transId=2
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getReservationStatusList?clientCode=DEMORESV&langCode=us-en&device=admin&transId=2&token=
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/getNotifyRemainderStatusList?clientCode=DEMORESV&langCode=us-en&device=admin&transId=2&token=
+
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/updateNotifyStatus
+{"clientCode":"DEMORESV","langCode":"us-en","device":"admin","transId":"1","notifyId":2,"notifyPhoneStatus":6}
+
+
+http://development.itfrontdesk.com:8089/resvdeskRESTws/admin/changeSchedulerStatus?clientCode=DEMORESV&langCode=us-en&device=admin&transId=2&status=open&token=
+
+http://localhost:8089/resvdeskRESTws/admin/getInBoundCallReportList
+{"clientCode":"DEMORESV",
+"langCode":"us-en",
+"device":"admin",
+"transId":"1","fromDate":"04/12/2015","toDate":"05/30/2015","callerId":"1231231234"}
+
+
+http://localhost:8089/resvdeskRESTws/admin/getOutBoundCallReportList
+{"clientCode":"DEMORESV",
+"langCode":"us-en",
+"device":"admin",
+"transId":"1","fromDate":"04/12/2015","toDate":"05/30/2016","callerId":"1231231234"}
+
+http://localhost:8089/resvdeskRESTws/admin/getTransStates
+{"clientCode":"DEMORESV",
+"langCode":"us-en",
+"device":"admin",
+"transId":"1"}
+
+
+http://localhost:8089/resvdeskRESTws/notifyservice/getNotifyList?clientCode=DEMORESV&device=email
+

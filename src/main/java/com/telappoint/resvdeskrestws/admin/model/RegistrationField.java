@@ -1,0 +1,213 @@
+package com.telappoint.resvdeskrestws.admin.model;
+
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.map.annotate.JsonSerialize;
+import org.codehaus.jackson.map.annotate.JsonSerialize.Inclusion;
+
+@JsonSerialize(include = Inclusion.NON_NULL)
+public class RegistrationField {
+
+	// display field label name, type, required field or not.
+	private String displayTitle;
+	private String displayType;
+	private String fieldName; // param column
+	private String javaRef;
+
+	//private String displayNote; // field note - use this later
+	private String listInitValue; // initial values of the fields
+	private char isMandatory; // required
+
+	// specifies validation is required or not.
+	private String validationRequired;
+
+	private String displaySize; // text box size
+	private String maxLength;
+
+	// for validation
+	private String validateMinValue;
+	private String validateMaxValue;
+	private String validateMaxChars;
+	
+	private String initValue;
+	private String validateMinChars;
+
+	// validation message
+	private String emptyErrorMessage;
+	private String invalidErrorMessage;
+
+	// validate rules
+	private String validateRules;
+	
+	// This is required for internal
+	@JsonIgnore
+	private String loginType;
+
+	// drop down fields - TODO: we will use below two fields later
+	//private List<Options> optionsList;
+	//private String defaultOptionValue;
+	
+	// this field is required for internal purpose
+	@JsonIgnore
+	private int placement;
+
+	public String getDisplayTitle() {
+		return displayTitle;
+	}
+
+	public void setDisplayTitle(String displayTitle) {
+		this.displayTitle = displayTitle;
+	}
+
+	public String getDisplayType() {
+		return displayType;
+	}
+
+	public void setDisplayType(String displayType) {
+		this.displayType = displayType;
+	}
+
+	public String getFieldName() {
+		return fieldName;
+	}
+
+	public void setFieldName(String fieldName) {
+		this.fieldName = fieldName;
+	}
+
+	/*public String getDisplayNote() {
+		return displayNote;
+	}
+
+	public void setDisplayNote(String displayNote) {
+		this.displayNote = displayNote;
+	}
+	*/
+
+	public String getInitValue() {
+		return initValue;
+	}
+
+	public void setInitValue(String initValue) {
+		this.initValue = initValue;
+	}
+
+	public char getIsMandatory() {
+		return isMandatory;
+	}
+
+	public void setIsMandatory(char isMandatory) {
+		this.isMandatory = isMandatory;
+	}
+
+	public String getValidationRequired() {
+		return validationRequired;
+	}
+
+	public void setValidationRequired(String validationRequired) {
+		this.validationRequired = validationRequired;
+	}
+
+	public String getValidateMinValue() {
+		return validateMinValue;
+	}
+
+	public void setValidateMinValue(String validateMinValue) {
+		this.validateMinValue = validateMinValue;
+	}
+
+	public String getValidateMaxValue() {
+		return validateMaxValue;
+	}
+
+	public void setValidateMaxValue(String validateMaxValue) {
+		this.validateMaxValue = validateMaxValue;
+	}
+
+	public String getValidateMaxChars() {
+		return validateMaxChars;
+	}
+
+	public void setValidateMaxChars(String validateMaxChars) {
+		this.validateMaxChars = validateMaxChars;
+	}
+
+	public String getEmptyErrorMessage() {
+		return emptyErrorMessage;
+	}
+
+	public void setEmptyErrorMessage(String emptyErrorMessage) {
+		this.emptyErrorMessage = emptyErrorMessage;
+	}
+
+	public String getInvalidErrorMessage() {
+		return invalidErrorMessage;
+	}
+
+	public void setInvalidErrorMessage(String invalidErrorMessage) {
+		this.invalidErrorMessage = invalidErrorMessage;
+	}
+
+	public String getValidateRules() {
+		return validateRules;
+	}
+
+	public void setValidateRules(String validateRules) {
+		this.validateRules = validateRules;
+	}
+
+	public String getDisplaySize() {
+		return displaySize;
+	}
+
+	public void setDisplaySize(String displaySize) {
+		this.displaySize = displaySize;
+	}
+
+	public int getPlacement() {
+		return placement;
+	}
+
+	public void setPlacement(int placement) {
+		this.placement = placement;
+	}
+
+	public String getLoginType() {
+		return loginType;
+	}
+
+	public void setLoginType(String loginType) {
+		this.loginType = loginType;
+	}
+
+	public String getMaxLength() {
+		return maxLength;
+	}
+
+	public void setMaxLength(String maxLength) {
+		this.maxLength = maxLength;
+	}
+
+	public String getValidateMinChars() {
+		return validateMinChars;
+	}
+
+	public void setValidateMinChars(String validateMinChars) {
+		this.validateMinChars = validateMinChars;
+	}
+
+	public String getListInitValue() {
+		return listInitValue;
+	}
+
+	public void setListInitValue(String listInitValue) {
+		this.listInitValue = listInitValue;
+	}
+
+	public String getJavaRef() {
+		return javaRef;
+	}
+
+	public void setJavaRef(String javaRef) {
+		this.javaRef = javaRef;
+	}
+}
